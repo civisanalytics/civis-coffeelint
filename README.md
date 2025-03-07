@@ -86,3 +86,10 @@ rake prepare_coffeelint
 ```
 
 You may need to run `git submodule sync` first.
+
+There is a Dockerfile that can be used to build and test the gem.
+
+```
+docker build -t civis-coffeelint .
+docker run civis-coffeelint
+```
