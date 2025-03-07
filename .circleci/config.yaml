@@ -1,0 +1,17 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/ruby:3.2
+    steps:
+      - checkout
+      - run:
+          name: Prepare Coffeelint
+          command: rake prepare_coffeelint
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
