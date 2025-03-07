@@ -6,3 +6,5 @@ before_install:
   - gem install bundler
 before_script:
   - rake prepare_coffeelint
+script:
+  - rake spec
