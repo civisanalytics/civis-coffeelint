@@ -82,5 +82,14 @@ Finally, there is a command line utility that allows you to run standalone tests
 Bundler needs a compiled coffeelint present which you can get by running
 
 ```
-rake prepare
+rake prepare_coffeelint
+```
+
+You may need to run `git submodule sync` first.
+
+There is a Dockerfile that can be used to build and test the gem.
+
+```
+docker build -t civis-coffeelint .
+docker run civis-coffeelint
 ```

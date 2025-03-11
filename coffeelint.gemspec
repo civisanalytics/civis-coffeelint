@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'coffeelint/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "coffeelint"
+  gem.name          = "civis-coffeelint"
   gem.version       = Coffeelint::VERSION
-  gem.authors       = ["Zachary Bush"]
-  gem.email         = ["zach@zmbush.com"]
+  gem.authors       = ["Zachary Bush", "Leanne Miller"]
+  gem.email         = ["opensource@civisanalytics.com"]
   gem.description   = %q{Ruby bindings for coffeelint}
   gem.summary       = %q{Ruby bindings for coffeelint along with railtie to add rake task to rails}
-  gem.homepage      = "https://github.com/zipcodeman/coffeelint-ruby"
+  gem.homepage      = "https://github.com/civisanalytics/civis-coffeelint"
   gem.licenses      = ["MIT"]
 
   gem.files         = `git ls-files`.split($/) + %w(coffeelint/lib/coffeelint.js) - %w(bin/coffeelint)
